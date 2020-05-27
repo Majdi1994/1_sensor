@@ -8,7 +8,7 @@ from utils import *
 device = torch.device('cpu')
 
 # loading data for training and testing, specifiying the parameters and running the model 
-my_data = torch.load('data/1s_11c_1024_snr0_D0.5_os.pt')
+my_data = torch.load('/content/drive/My Drive/data/1s_11c_1024_snr0_D0.5_os.pt')
 
 ##################################### Training Batch Size ##############
 
