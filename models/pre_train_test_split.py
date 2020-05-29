@@ -6,6 +6,12 @@ from torch.optim.lr_scheduler import StepLR
 from models.train_eval import train, evaluate
 import torch.nn as nn
 from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import matthews_corrcoef
+from sklearn.metrics import f1_score
+from sklearn.metrics import roc_auc_score
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
 device = torch.device('cpu')
 def trainer(model, train_dl, test_dl, data_id, config, params):
     criterion = nn.CrossEntropyLoss()
